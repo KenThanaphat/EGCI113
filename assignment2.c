@@ -25,9 +25,11 @@ int main()
         default: printf("%dx",b);
     }
 
-    if (b!=0 && c>0) printf("+");
+    if ((a!=0 || b!=0)&&c>0) printf("+");
 
-    if (c!=0) printf("%d\n",c);
+    if (c!=0) printf("%d",c);
+
+    puts("=0");
 
     float x1=(-b+(sqrt(b*b-4*a*c)))/(2*a);
     float x2=(-b-(sqrt(b*b-4*a*c)))/(2*a);
