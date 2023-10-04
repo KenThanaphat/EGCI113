@@ -16,7 +16,7 @@ int main()
         default: printf("%dx^2",a);
     }
 
-    if (b>0) printf("+");
+    if (a!=0 && b>0) printf("+");
 
     switch(b){
         case 1: printf("x"); break;
@@ -25,12 +25,9 @@ int main()
         default: printf("%dx",b);
     }
 
-    if (c>0) printf("+");
+    if (b!=0 && c>0) printf("+");
 
-    switch(c){
-        case 0: break;
-        default: printf("%d\n",c);
-    }
+    if (c!=0) printf("%d\n",c);
 
     float x1=(-b+(sqrt(b*b-4*a*c)))/(2*a);
     float x2=(-b-(sqrt(b*b-4*a*c)))/(2*a);
